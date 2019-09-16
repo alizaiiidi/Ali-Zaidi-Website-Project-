@@ -1,18 +1,60 @@
 <!DOCTYPE html>
-
 <html>
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-  <title>my-first-website</title>
-  <LINK href="styles.css" rel="stylesheet" type="text/css">
-</head>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>JAMES</title>
+		<link rel="stylesheet" type="text/css" href="main.css" />
+	</head>
+	<body>
 
-<body>
+		<div class="parallax"></div>
 
-<img src="https://octodex.github.com/images/daftpunktocat-thomas.gif" id="octocat" alt="octocat-gif" />
+		<div id = "main">
+			<header>
+				<nav>
+					<h1><font size="+10"><strong>JAMES</strong></font></h1>
+					<h2><font size="+10"><em>Wei</em></font></h2>
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="page2.html">Contact</a></li>
+						<li><a href="FINAL RESUME copy.pdf" target="_blank">About</a></li>
+					</ul>
+				</nav>
+			</header>
+			  <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+		</div>
 
-<!-- Change this code here by copy and pasting your template on line 15 -->
-<p>Welcome to your first GitHub Pages website!</p>
+		
 
-</body>
+		<div id="mySidenav" class="sidenav">
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+			<a href="#">About</a>
+			<a href="#">Services</a>
+			<a href="#">Clients</a>
+			<a href="#">Contact</a>
+		</div>
+
+		<div class="parallax"></div>
+
+		
+		
+		
+		<ol>
+			<li>number 1</li>
+			<li>number 2</li>
+		</ol>
+		<footer>© James Wei, 2019</footer>
+
+		<script>
+		function openNav() {
+		  document.getElementById("mySidenav").style.width = "250px";
+		  document.getElementById("main").style.marginLeft = "250px";
+		}
+
+		function closeNav() {
+		  document.getElementById("mySidenav").style.width = "0";
+		  document.getElementById("main").style.marginLeft= "0";
+		}
+		</script>
+	</body>
 </html>
